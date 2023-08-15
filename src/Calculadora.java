@@ -34,6 +34,18 @@ public class Calculadora {
                 double division = (double) numero1 / numero2;
                 System.out.println("La división es " + division);
             }
+            case '%'-> {
+                //Operacion mod:
+                // En la división alguno debe ser double para que el resultado decimal sea aproximado correctamente.
+                int mod = numero1 % numero2;
+                System.out.println("El mod es " + mod);
+            }
+            case 'p'-> {
+                //Operecion exponente:
+                // se agrega el metodo math.pow para que la potencia se eleve
+                double exponente = Math.pow(numero1, numero2);
+                System.out.println("El exponente es " + exponente);
+            }
             default -> System.out.println("Operación inválida");
         }
     }
